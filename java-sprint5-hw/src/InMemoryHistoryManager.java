@@ -3,7 +3,10 @@ import java.util.*;
 public class InMemoryHistoryManager implements HistoryManager {
 
 
+    @Override
+    public void add(Task task) {
 
+    }
 
     @Override
     public List<Task> getHistory() {
@@ -39,78 +42,78 @@ public class InMemoryHistoryManager implements HistoryManager {
             this.prev = prev;
             this.next = next;
         }
-        public String toString(){
+
+        public String toString() {
             //TODO xxxxx
             return null;
         }
 
 
-    private static final int SIZE_OF_HISTORY = 10;
-    final private Map<Integer, Node<Task>> tasksIdAndNodes = new HashMap<>();
+        private static final int SIZE_OF_HISTORY = 10;
+        final private Map<Integer, Node<Task>> tasksIdAndNodes = new HashMap<>();
 
-    private Node<Task> head;
-    private Node<Task> next;
-    private final int sizeOfCustomLinkedList = 0;
-
-
+        private Node<Task> head;
+        private Node<Task> next;
+        private int sizeOfCustomLinkedList = 0;
 
 
-    private ArrayList<Task> getTasks() {
-        ArrayList<Task> tasks = new ArrayList<>();
-        Node node = head;
-        while (node.next != null) {
-            tasks.add(node);
+        private ArrayList<Task> getTasks() {
+            ArrayList<Task> tasks = new ArrayList<>();
+            Node node = head;
+            while (node.next != null) {
+                tasks.add(node);
+            }
+            return tasks;
         }
-        return tasks;
-    }
 
-    private void linkLast(Task task) {
-        final Node node = new Node(task, last, null);
+        private void linkLast(Task task) {
+            final Node node = new Node(task, last, null);
 
-        //TODO
-        last = node;
-    }
+            //TODO
+            last = node;
+        }
 
-    @Override
-    public List<Task> getHistory() {
-        return getTasks();
-    }
+        @Override
+        public List<Task> getHistory() {
+            return getTasks();
+        }
 
-    @Override
-    public void add(Task task) {
-        removeNode(task);
-        getTasks();
-        //add as a last one
-        //add info the map
-    }
+        @Override
+        public void add(Task task) {
+            removeNode(task);
+            getTasks();
+            //add as a last one
+            //add info the map
+        }
 
-    private void removeNode(Task id) {
-        final Node node = tasksIdAndNodes.remove(id);
-        if (node.prev==null){
-            first=node.next;
-            node.next.prev=null;
-        }else if(node.prev!=null &&node!=null){
-            first=node.next;
-            node.next.prev=null;}else{
+        private void removeNode(Task id) {
+            final Node node = tasksIdAndNodes.remove(id);
+            if (node.prev == null) {
+                first = node.next;
+                node.next.prev = null;
+            } else if (node.prev != null && node != null) {
+                first = node.next;
+                node.next.prev = null;
+            } else {
 
-    }
+            }
 
-    public void addLast(Task element) {
-        final Node<Task> oldTail = (Node<Task>) tail;
-        final Node<Task> newNode = new Node<Task>(tail, element, null);
-        tail = newNode;
-        if (oldTail == null) {
-            head = newNode;
-            sizeOfCustomLinkedList++;
-        } else {
-            oldTail.next = newNode;
-            sizeOfCustomLinkedList++;
+            public void addLast (Task element){
+                final Node<Task> oldTail = (Node<Task>) tail;
+                final Node<Task> newNode = new Node<Task>(tail, element, null);
+                tail = newNode;
+                if (oldTail == null) {
+                    head = newNode;
+                    sizeOfCustomLinkedList++;
+                } else {
+                    oldTail.next = newNode;
+                    sizeOfCustomLinkedList++;
+                }
+            }
+
+
         }
     }
-
-
-
 }
-        }
 
 
