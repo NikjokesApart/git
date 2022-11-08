@@ -19,16 +19,17 @@ public class InMemoryHistoryManager implements HistoryManager {
     }
 
     //public List<Task> historyTaskList = new LinkedList<>();
-    private static class Node {
-        Task task;
-        Node prev;
-        Node next;
+    private static class Node<T> extends Task {
+        private Task task;
+        private Node<Task> prev;
+        private Node<Task> next;
+        private Node<Task> head;
 
         @Override
         public boolean equals(Object o) {
             if (this == o) return true;
             if (o == null || getClass() != o.getClass()) return false;
-            Node node = (Node) o;
+            Node<Task> node = (Node<Task>) o;
             return sizeOfCustomLinkedList == node.sizeOfCustomLinkedList && Objects.equals(task, node.task) && Objects.equals(prev, node.prev) && Objects.equals(next, node.next) && Objects.equals(tasksIdAndNodes, node.tasksIdAndNodes) && Objects.equals(head, node.head) && Objects.equals(next, node.next);
         }
 
@@ -37,7 +38,7 @@ public class InMemoryHistoryManager implements HistoryManager {
             return Objects.hash(task, prev, next, tasksIdAndNodes, head, next, sizeOfCustomLinkedList);
         }
 
-        private Node(Task task, Node prev, Node next) {
+        private Node(Task task, Node<Task> prev, Node<Task> next) {
             this.task = task;
             this.prev = prev;
             this.next = next;
@@ -59,8 +60,8 @@ public class InMemoryHistoryManager implements HistoryManager {
     private static final int SIZE_OF_HISTORY = 10;
     static final private Map<Integer, Node<Task>> tasksIdAndNodes = new HashMap<>();
 
-    private Node<Task> head;
-    private Node<Task> next;
+
+
     private int sizeOfCustomLinkedList = 0;
 
 
@@ -68,7 +69,7 @@ public class InMemoryHistoryManager implements HistoryManager {
 
     private ArrayList<Task> getTasks() {
         ArrayList<Task> tasks = new ArrayList<>();
-        Node node = head;
+        Node<Task> node = head;
         while (node.next != null) {
             tasks.add(node);
         }
@@ -76,10 +77,10 @@ public class InMemoryHistoryManager implements HistoryManager {
     }
 
     private void linkLast(Task task) {
-        final Node node = new Node(task, last, null);
+        final Node<Task> node = new Node<Task>(task, prev, null);
 
         //TODO
-        last = node;
+        prev = node;
     }
 
     @Override
@@ -96,20 +97,18 @@ public class InMemoryHistoryManager implements HistoryManager {
     }
 
     private void removeNode(Task id) {
-        final Node node = tasksIdAndNodes.remove(id);
+        final Node<Task> node = tasksIdAndNodes.remove(id);
         if (node.prev == null) {
-            first = node.next;
             node.next.prev = null;
         } else if (node.prev != null && node != null) {
-            first = node.next;
             node.next.prev = null;
         }
     }
 
-    public void addLast(Task element) {
-        final Node<Task> oldTail = (Node<Task>) tail;
-        final Node<Task> newNode = new Node<Task>(tail, element, null);
-        tail = newNode;
+    public void addLast(Task task) {
+        final Node<Task> oldTail = prev;
+        final Node<Task> newNode = new Node(task, prev, null);
+        prev = newNode;
         if (oldTail == null) {
             head = newNode;
             sizeOfCustomLinkedList++;

@@ -5,86 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ea3379be-119d-425f-a5bc-d3a5f744e4fa" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../untitled/out/production/untitled/Main.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../untitled1/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../untitled1/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../untitled1/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../untitled1/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../untitled2/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../untitled2/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../untitled2/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../untitled2/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../untitled2/src/PotatoLaboratory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../архив/finalsprint1/finalsprint1.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../архив/java-sprint2-hw-main/java-sprint2-hw-main.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../архив/java-sprint2-hw-main/java-sprint2-hw.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../архив/java-sprint3-hw-2/out/production/untitled2/java-sprint3-hw-2.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../архив/java-sprint3-hw-2/src/java-sprint3-hw-2.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../архив/java-sprint3-hw-2/untitled2.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../архив/java-sprint3-hw/java-sprint3-hw.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../архив/java-sprint3-hw/src/java-sprint3-hw.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../архив/java-sprint3-hw/untitled2.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../архив/practucim/practucim.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../архив/untitled/untitled.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../архив/untitled1/untitled1.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../архив/untitled2/untitled2.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../архив/untitled2/untitled2/untitled2.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../архив/untitled3/untitled3.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../архив/untitled4/untitled4.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../архив/untitled5/untitled5.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.gitattributes" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../finalsprint1/finalsprint1.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../finalsprint1/java-sprint1-hw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../java-sprint2-hw-main/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../java-sprint2-hw-main/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../java-sprint2-hw-main/.idea/.name" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../java-sprint2-hw-main/.idea/description.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../java-sprint2-hw-main/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../java-sprint2-hw-main/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../java-sprint2-hw-main/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../java-sprint2-hw-main/.idea/project-template.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../java-sprint2-hw-main/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../java-sprint2-hw-main/java-sprint2-hw-main.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../java-sprint2-hw-main/java-sprint2-hw.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../java-sprint2-hw-main/resources/m.202101.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../java-sprint2-hw-main/resources/m.202102.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../java-sprint2-hw-main/resources/m.202103.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../java-sprint2-hw-main/resources/y.2021.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../java-sprint2-hw-main/src/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../java-sprint2-hw-main/src/YRecord.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../java-sprint2-hw-main/src/YearlyReport.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../java-sprint3-hw/java-sprint3-hw.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../java-sprint3-hw/untitled2.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../practucim/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../practucim/practucim.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../practucim/src/Book.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../practucim/src/Library.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../practucim/src/Practicum.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../practucim/src/bin/Book.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../practucim/src/bin/Library.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../practucim/src/bin/Practicum.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../untitled/src/main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../untitled/src/main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../untitled1/src/Address.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../untitled1/src/Contact.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../untitled1/src/ContactBook.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../untitled1/src/Email.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../untitled1/src/Phone.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../untitled1/src/Practicum.java" beforeDir="false" afterPath="$PROJECT_DIR$/../untitled1/src/Practicum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../untitled1/src/SocialNetworkContact.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../untitled2/untitled2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../untitled2/untitled2.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../untitled2/untitled2/src/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../untitled2/untitled2/untitled2.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../untitled4/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../untitled4/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../untitled4/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../untitled4/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../untitled4/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../untitled4/src/Epic.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../untitled4/src/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../untitled4/src/SubTaks.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../untitled4/src/Task.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../untitled4/src/TaskManager.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../untitled4/untitled4.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/InMemoryHistoryManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/InMemoryHistoryManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Task.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Task.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

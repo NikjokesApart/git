@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="ea3379be-119d-425f-a5bc-d3a5f744e4fa" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../.gitattributes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../finalsprint1/finalsprint1.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../finalsprint1/java-sprint1-hw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-sprint2-hw-main/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-sprint2-hw-main/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-sprint2-hw-main/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-sprint2-hw-main/.idea/description.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-sprint2-hw-main/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-sprint2-hw-main/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-sprint2-hw-main/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-sprint2-hw-main/.idea/project-template.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-sprint2-hw-main/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-sprint2-hw-main/java-sprint2-hw-main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-sprint2-hw-main/java-sprint2-hw.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-sprint2-hw-main/resources/m.202101.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-sprint2-hw-main/resources/m.202102.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-sprint2-hw-main/resources/m.202103.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-sprint2-hw-main/resources/y.2021.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-sprint2-hw-main/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-sprint2-hw-main/src/YRecord.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-sprint2-hw-main/src/YearlyReport.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-sprint3-hw/java-sprint3-hw.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-sprint3-hw/untitled2.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../practucim/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../practucim/practucim.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../practucim/src/Book.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../practucim/src/Library.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../practucim/src/Practicum.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../practucim/src/bin/Book.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../practucim/src/bin/Library.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../practucim/src/bin/Practicum.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../untitled/src/main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../untitled/untitled.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../untitled1/src/Address.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../untitled1/src/Contact.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../untitled1/src/ContactBook.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../untitled1/src/Email.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../untitled1/src/Phone.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../untitled1/src/Practicum.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../untitled1/src/SocialNetworkContact.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../untitled1/untitled1.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../untitled2/untitled2.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../untitled2/untitled2/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../untitled2/untitled2/untitled2.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../untitled3/untitled3.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../untitled4/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../untitled4/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../untitled4/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../untitled4/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../untitled4/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../untitled4/src/Epic.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../untitled4/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../untitled4/src/SubTaks.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../untitled4/src/Task.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../untitled4/src/TaskManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../untitled4/untitled4.iml" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Enum" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2E7YABCziZ2nUdbAIAGle6krwPS" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;create.test.in.the.same.root&quot;: &quot;true&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;copyright&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="ExtractSuperBase.RECENT_KEYS">
+      <recent name="" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="enums" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ea3379be-119d-425f-a5bc-d3a5f744e4fa" name="Changes" comment="" />
+      <created>1661947945736</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1661947945736</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
