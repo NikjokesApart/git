@@ -42,78 +42,83 @@ public class InMemoryHistoryManager implements HistoryManager {
             this.prev = prev;
             this.next = next;
         }
+        public String toString(){
+            String result = "Post{task='" +task+ "',tasksIdAndNodes.size()='"+tasksIdAndNodes.size()+ "',prev="+ prev + ",next="+ next+'}';
 
-        public String toString() {
-            //TODO xxxxx
-            return null;
-        }
+            if(tasksIdAndNodes  != null) {
 
-
-        private static final int SIZE_OF_HISTORY = 10;
-        final private Map<Integer, Node<Task>> tasksIdAndNodes = new HashMap<>();
-
-        private Node<Task> head;
-        private Node<Task> next;
-        private int sizeOfCustomLinkedList = 0;
-
-
-        private ArrayList<Task> getTasks() {
-            ArrayList<Task> tasks = new ArrayList<>();
-            Node node = head;
-            while (node.next != null) {
-                tasks.add(node);
-            }
-            return tasks;
-        }
-
-        private void linkLast(Task task) {
-            final Node node = new Node(task, last, null);
-
-            //TODO
-            last = node;
-        }
-
-        @Override
-        public List<Task> getHistory() {
-            return getTasks();
-        }
-
-        @Override
-        public void add(Task task) {
-            removeNode(task);
-            getTasks();
-            //add as a last one
-            //add info the map
-        }
-
-        private void removeNode(Task id) {
-            final Node node = tasksIdAndNodes.remove(id);
-            if (node.prev == null) {
-                first = node.next;
-                node.next.prev = null;
-            } else if (node.prev != null && node != null) {
-                first = node.next;
-                node.next.prev = null;
             } else {
-
+                result = result + ", tasksIdAndNodes=null";
             }
 
-            public void addLast (Task element){
-                final Node<Task> oldTail = (Node<Task>) tail;
-                final Node<Task> newNode = new Node<Task>(tail, element, null);
-                tail = newNode;
-                if (oldTail == null) {
-                    head = newNode;
-                    sizeOfCustomLinkedList++;
-                } else {
-                    oldTail.next = newNode;
-                    sizeOfCustomLinkedList++;
-                }
-            }
+            return  result;
+        }
 
 
+
+    private static final int SIZE_OF_HISTORY = 10;
+    static final private Map<Integer, Node<Task>> tasksIdAndNodes = new HashMap<>();
+
+    private Node<Task> head;
+    private Node<Task> next;
+    private int sizeOfCustomLinkedList = 0;
+
+
+
+
+    private ArrayList<Task> getTasks() {
+        ArrayList<Task> tasks = new ArrayList<>();
+        Node node = head;
+        while (node.next != null) {
+            tasks.add(node);
+        }
+        return tasks;
+    }
+
+    private void linkLast(Task task) {
+        final Node node = new Node(task, last, null);
+
+        //TODO
+        last = node;
+    }
+
+    @Override
+    public List<Task> getHistory() {
+        return getTasks();
+    }
+
+    @Override
+    public void add(Task task) {
+        removeNode(task);
+        getTasks();
+        //add as a last one
+        //add info the map
+    }
+
+    private void removeNode(Task id) {
+        final Node node = tasksIdAndNodes.remove(id);
+        if (node.prev == null) {
+            first = node.next;
+            node.next.prev = null;
+        } else if (node.prev != null && node != null) {
+            first = node.next;
+            node.next.prev = null;
+        }
+    }
+
+    public void addLast(Task element) {
+        final Node<Task> oldTail = (Node<Task>) tail;
+        final Node<Task> newNode = new Node<Task>(tail, element, null);
+        tail = newNode;
+        if (oldTail == null) {
+            head = newNode;
+            sizeOfCustomLinkedList++;
+        } else {
+            oldTail.next = newNode;
+            sizeOfCustomLinkedList++;
         }
     }
 }
+        }
 
 
