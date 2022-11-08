@@ -1,11 +1,8 @@
 import java.util.*;
 
 public class InMemoryHistoryManager implements HistoryManager {
-
-
     @Override
     public void add(Task task) {
-
     }
 
     @Override
@@ -15,11 +12,9 @@ public class InMemoryHistoryManager implements HistoryManager {
 
     @Override
     public void remove(int id) {
-
     }
 
-    //public List<Task> historyTaskList = new LinkedList<>();
-    private static class Node<T> extends Task {
+    private static class Node<Task>{
         private Task task;
         private Node<Task> prev;
         private Node<Task> next;
@@ -43,81 +38,71 @@ public class InMemoryHistoryManager implements HistoryManager {
             this.prev = prev;
             this.next = next;
         }
-        public String toString(){
-            String result = "Post{task='" +task+ "',tasksIdAndNodes.size()='"+tasksIdAndNodes.size()+ "',prev="+ prev + ",next="+ next+'}';
 
-            if(tasksIdAndNodes  != null) {
-
+        public String toString() {
+            String result = "Post{task='" + task + "',tasksIdAndNodes.size()='" + tasksIdAndNodes.size() + "',prev=" + prev + ",next=" + next + '}';
+            if (tasksIdAndNodes != null) {
             } else {
                 result = result + ", tasksIdAndNodes=null";
             }
-
-            return  result;
+            return result;
         }
 
+        private static final int SIZE_OF_HISTORY = 10;
+        static final private Map<Integer, Node<Task>> tasksIdAndNodes = new HashMap<>();
+        private int sizeOfCustomLinkedList = 0;
 
-
-    private static final int SIZE_OF_HISTORY = 10;
-    static final private Map<Integer, Node<Task>> tasksIdAndNodes = new HashMap<>();
-
-
-
-    private int sizeOfCustomLinkedList = 0;
-
-
-
-
-    private ArrayList<Task> getTasks() {
-        ArrayList<Task> tasks = new ArrayList<>();
-        Node<Task> node = head;
-        while (node.next != null) {
-            tasks.add(node);
+        private ArrayList<Task> getTasks() {
+            ArrayList<Task> tasks = new ArrayList<>();
+            Node<Task> node = head;
+            while (node.next != null) {
+                tasks.add((Task) node);
+            }
+            return tasks;
         }
-        return tasks;
-    }
 
-    private void linkLast(Task task) {
-        final Node<Task> node = new Node<Task>(task, prev, null);
+        private void linkLast(Task task) {
+            final Node<Task> node = new Node<Task>(task, prev, null);
 
-        //TODO
-        prev = node;
-    }
-
-    @Override
-    public List<Task> getHistory() {
-        return getTasks();
-    }
-
-    @Override
-    public void add(Task task) {
-        removeNode(task);
-        getTasks();
-        //add as a last one
-        //add info the map
-    }
-
-    private void removeNode(Task id) {
-        final Node<Task> node = tasksIdAndNodes.remove(id);
-        if (node.prev == null) {
-            node.next.prev = null;
-        } else if (node.prev != null && node != null) {
-            node.next.prev = null;
+            //TODO
+            prev = node;
         }
-    }
 
-    public void addLast(Task task) {
-        final Node<Task> oldTail = prev;
-        final Node<Task> newNode = new Node(task, prev, null);
-        prev = newNode;
-        if (oldTail == null) {
-            head = newNode;
-            sizeOfCustomLinkedList++;
-        } else {
-            oldTail.next = newNode;
-            sizeOfCustomLinkedList++;
+        @Override
+        public List<Task> getHistory() {
+            return getTasks();
+        }
+
+        @Override
+        public void add(Task task) {
+            removeNode(task);
+            getTasks();
+            //add as a last one
+            //add info the map
+        }
+
+        private void removeNode(Task id) {
+            final Node<Task> node = tasksIdAndNodes.remove(id);
+            if (node.prev == null) {
+                node.next.prev = null;
+            } else if (node.prev != null && node != null) {
+                node.next.prev = null;
+            }
+        }
+
+        public void addLast(Task task) {
+            final Node<Task> oldTail = prev;
+            final Node<Task> newNode = new Node(task, prev, null);
+            prev = newNode;
+            if (oldTail == null) {
+                head = newNode;
+                sizeOfCustomLinkedList++;
+            } else {
+                oldTail.next = newNode;
+                sizeOfCustomLinkedList++;
+            }
         }
     }
 }
-        }
 
 
