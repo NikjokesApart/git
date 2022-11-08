@@ -1,6 +1,8 @@
 import enums.TaskStatus;
 
-public class Task {
+import java.util.List;
+
+public abstract class Task {
     protected int id;
     protected String name;
     protected String description;
@@ -10,6 +12,9 @@ public class Task {
         this.name = name;
         this.description = description;
         this.status = status;
+    }
+
+    protected Task() {
     }
 
     public void setTaskById(int id) {
@@ -23,4 +28,8 @@ public class Task {
     public String setStatus(String status) {
         return status;
     }
+
+    public abstract List<Task> getHistory();
+
+    public abstract void add(Task task);
 }
