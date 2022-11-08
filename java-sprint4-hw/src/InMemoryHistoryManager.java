@@ -1,22 +1,19 @@
 import java.util.ArrayList;
 import java.util.List;
 
-public abstract class InMemoryHistoryManager implements HistoryManager {
-    @Override
+public class InMemoryHistoryManager implements HistoryManager {
+
+    public List<Task> historyTaskList = new ArrayList<>();
+
     public List<Task> getHistory() {
-        return null;
-    }
-    public List<Task> getHistory(){
-        return InMemoryTaskManager.historyManager.getHistory();
-    }
-
-     @Override
-    public void add(Task task) {
-
+        return historyTaskList;
     }
 
     @Override
-    public void remove(int id) {
-
+    public void add(Task task) {
+        if (historyTaskList.size() > 10) {
+            historyTaskList.remove(0);
+        }
+        historyTaskList.add(task);
     }
 }

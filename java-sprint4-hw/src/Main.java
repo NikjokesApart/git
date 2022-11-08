@@ -3,7 +3,7 @@ import static enums.TaskStatus.*;
 public class Main {
     public static void main(String[] args) {
 
-        TaskManager manager =Managers.getDefault();
+        TaskManager manager = Managers.getDefault();
 
         Task task1 = new Task("Task 1", "Task 1 description", NEW);
         Task task2 = new Task("Task 2", "Task 2 description", IN_PROGRESS);
@@ -33,5 +33,6 @@ public class Main {
         manager.deleteTaskById(taskId2);
         manager.deleteAllTasks();
         manager.deleteAllEpics();
+        manager.getHistory();
     }
 }

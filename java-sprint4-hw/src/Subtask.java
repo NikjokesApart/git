@@ -10,8 +10,7 @@ public class Subtask extends Task {
     public String toString() {
         return "Subtask{" + "id=" + id + "epicId=" + epicId + "name=" + name + "status=" + status + "description=" + description + "}";
     }
-
-      public int getEpicId() {
+     public int getEpicId() {
         return epicId;
     }
 }

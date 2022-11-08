@@ -27,8 +27,8 @@ public interface TaskManager {
     void deleteAllEpics();
 
     void deleteAllSubtasks();
-    List<Task> getHistory(){
-        return historyManager.getHistory();
-    }
+
+    List<Task> getHistory();
+
     Task getTaskById(int taskId1);
 }
