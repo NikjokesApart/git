@@ -138,11 +138,6 @@ public class InMemoryTaskManager implements TaskManager {
         }
     }
 
-    @Override
-    public List<Task> getHistory() {
-        return historyManager.getHistory();
-    }
-
     public Epic getEpicById(int id) {
         final Epic epic = epicHashMap.get(id);
         historyManager.add(epic);

@@ -28,12 +28,8 @@ public class Main {
         manager.updateSubtask(subtask1);
         manager.updateSubtask(subtask2);
         manager.updateSubtask(subtask3);
-        System.out.println(manager.getHistory());
-
         manager.deleteSubtaskById(subtaskId1);
         manager.deleteSubtaskById(subtaskId2);
-
-
         //manager.deleteTaskById(taskId2);
         manager.deleteAllEpics();
         manager.deleteAllTasks();

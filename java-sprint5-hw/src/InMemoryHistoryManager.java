@@ -6,11 +6,6 @@ public class InMemoryHistoryManager implements HistoryManager {
     }
 
     @Override
-    public List<Task> getHistory() {
-        return null;
-    }
-
-    @Override
     public void remove(int id) {
     }
 
@@ -49,7 +44,7 @@ public class InMemoryHistoryManager implements HistoryManager {
         }
 
         private static final int SIZE_OF_HISTORY = 10;
-        static final private Map<Integer, Node<Task>> tasksIdAndNodes = new HashMap<>();
+        final private Map<Integer, Node<Task>> tasksIdAndNodes = new HashMap<>();
         private int sizeOfCustomLinkedList = 0;
 
         private ArrayList<Task> getTasks() {
@@ -63,22 +58,12 @@ public class InMemoryHistoryManager implements HistoryManager {
 
         private void linkLast(Task task) {
             final Node<Task> node = new Node<Task>(task, prev, null);
-
-            //TODO
             prev = node;
         }
 
-        @Override
-        public List<Task> getHistory() {
-            return getTasks();
-        }
-
-        @Override
-        public void add(Task task) {
+              public void add(Task task) {
             removeNode(task);
             getTasks();
-            //add as a last one
-            //add info the map
         }
 
         private void removeNode(Task id) {
