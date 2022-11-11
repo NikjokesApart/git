@@ -16,13 +16,13 @@ public class InMemoryHistoryManager implements HistoryManager {
     public void remove(int id) {
     }
 
-    private static class Node<Task>{
+    private static class Node<Task> {
         private Task data;
         private Node<Task> prev;
         private Node<Task> next;
 
 
-        private Node(Node<Task> prev,Task data, Node<Task> next) {
+        private Node(Node<Task> prev, Task data, Node<Task> next) {
             this.data = data;
             this.prev = prev;
             this.next = next;
@@ -50,28 +50,39 @@ public class InMemoryHistoryManager implements HistoryManager {
         }
         return tasks;
     }*/
+    private void removeNode(Node<Task> nodeToBeRemoved) {
+        if (sizeOfCustomLinkedList != 0) {
+            if (nodeToBeRemoved.equals(head)) {
+                if (head.equals(tail)) {
+                    tail = null;
+                } else {
+                    nodeToBeRemoved.next.prev = null;
+                }
+                head=null;
+            }
+        } else if (nodeToBeRemoved.equals(tail)) {
+            tail = nodeToBeRemoved.prev;
+            nodeToBeRemoved.prev.next = null;
+        } else {
+            nodeToBeRemoved.prev.next = nodeToBeRemoved.next;
+            nodeToBeRemoved.next.prev = nodeToBeRemoved.prev;
 
-    private void removeNode(Task id) {
-        final Node<Task> node = tasksIdAndNodes.remove(id);
-        if (node.prev == null) {
-            node.next.prev = null;
-        } else if (node.prev != null && node != null) {
-            node.next.prev = null;
         }
+        --sizeOfCustomLinkedList;
     }
 
 
-    private void linkLast (Task task) {
+    private void linkLast(Task task) {
         final Node<Task> oldTail = tail;
         final Node<Task> newNode = new Node<>(oldTail, task, null);
         tail = newNode;
-        if(oldTail == null) {
+        if (oldTail == null) {
             head = newNode;
         } else {
             oldTail.next = newNode;
         }
         ++sizeOfCustomLinkedList;
-        tasksIdAndNodes.put(task.getTaskById(),tail);
+        tasksIdAndNodes.put(task.getTaskById(), tail);
     }
 
 }
