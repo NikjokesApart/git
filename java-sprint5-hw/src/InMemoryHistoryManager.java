@@ -9,11 +9,16 @@ public class InMemoryHistoryManager implements HistoryManager {
 
     @Override
     public void add(Task task) {
-
+        Node<Task> node = new Node<>(null, task, null);
+        removeNode(node);
+        linkLast(task);
+        tasksIdAndNodes.put(task.getTaskById(), node);
     }
 
     @Override
     public void remove(int id) {
+        Node<Task> task = tasksIdAndNodes.get(id);
+        removeNode(task);
     }
 
     private static class Node<Task> {
@@ -42,23 +47,29 @@ public class InMemoryHistoryManager implements HistoryManager {
         }
     }
 
-    /*private ArrayList<Task> getTasks() {
-        ArrayList<Task> tasks = new ArrayList<>();
+    private ArrayList<Task> getTasks() {
+        ArrayList<Task> historyTaskList = new ArrayList<>();
         Node<Task> node = head;
+        historyTaskList.add(node.data);
         while (node.next != null) {
-            tasks.add((Task) node);
+            historyTaskList.add(node.data);
+            node = node.next;
         }
-        return tasks;
-    }*/
+        historyTaskList.add(tail.data);
+        return historyTaskList;
+    }
+
     private void removeNode(Node<Task> nodeToBeRemoved) {
         if (sizeOfCustomLinkedList != 0) {
             if (nodeToBeRemoved.equals(head)) {
+                final Node<Task> oldHead = head;
                 if (head.equals(tail)) {
                     tail = null;
                 } else {
-                    nodeToBeRemoved.next.prev = null;
+                    head.next.prev = null;
                 }
-                head=null;
+                head = oldHead.next;
+                oldHead.next = null;
             }
         } else if (nodeToBeRemoved.equals(tail)) {
             tail = nodeToBeRemoved.prev;
@@ -66,11 +77,10 @@ public class InMemoryHistoryManager implements HistoryManager {
         } else {
             nodeToBeRemoved.prev.next = nodeToBeRemoved.next;
             nodeToBeRemoved.next.prev = nodeToBeRemoved.prev;
-
         }
         --sizeOfCustomLinkedList;
+        tasksIdAndNodes.remove(nodeToBeRemoved.data.getTaskById());
     }
-
 
     private void linkLast(Task task) {
         final Node<Task> oldTail = tail;
@@ -84,7 +94,6 @@ public class InMemoryHistoryManager implements HistoryManager {
         ++sizeOfCustomLinkedList;
         tasksIdAndNodes.put(task.getTaskById(), tail);
     }
-
 }
 
 

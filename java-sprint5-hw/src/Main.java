@@ -33,5 +33,6 @@ public class Main {
         //manager.deleteTaskById(taskId2);
         manager.deleteAllEpics();
         manager.deleteAllTasks();
+
     }
 }
