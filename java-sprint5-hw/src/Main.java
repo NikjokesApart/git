@@ -30,9 +30,7 @@ public class Main {
         manager.updateSubtask(subtask3);
         manager.deleteSubtaskById(subtaskId1);
         manager.deleteSubtaskById(subtaskId2);
-        //manager.deleteTaskById(taskId2);
         manager.deleteAllEpics();
         manager.deleteAllTasks();
-
     }
 }
